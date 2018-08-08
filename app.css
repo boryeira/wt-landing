@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:300,400,600,700,900');
+
+body {
+  background-image: url('img/cover.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+
+.soon-wrapper {
+  position: relative;
+  margin: 0;
+  vertical-align: middle;
+  width: 100vw;
+  height: 120vh;
+  background: -webkit-linear-gradient(223deg, rgba(62, 0, 149, 1), rgba(75, 0, 173, 1), rgba(0, 0, 0, 0.4), rgba(62, 0, 149, 1), rgba(75, 0, 173, 1));
+  background: -o-linear-gradient(223deg, rgba(62, 0, 149, 1), rgba(75, 0, 173, 1), rgba(0, 0, 0, 0.4), rgba(62, 0, 149, 1), rgba(75, 0, 173, 1));
+  background: linear-gradient(223deg, rgba(62, 0, 149, 1), rgba(75, 0, 173, 1), rgba(0, 0, 0, 0.4), rgba(62, 0, 149, 1), rgba(75, 0, 173, 1));
+  background-size: 300% 400%;
+  -webkit-animation: Gradient 25s ease infinite;
+  -moz-animation: Gradient 25s ease infinite;
+  animation: Gradient 25s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0%{background-position:84% 0%}
+  25%{background-position:17% 100%}
+  50%{background-position:0% 84%}
+  75%{background-position:100% 35%}
+  100%{background-position:84% 0%}
+}
+
+@-moz-keyframes Gradient {
+  0%{background-position:84% 0%}
+  25%{background-position:17% 100%}
+  50%{background-position:0% 84%}
+  75%{background-position:100% 35%}
+  100%{background-position:84% 0%}
+}
+
+@keyframes Gradient {
+  0%{background-position:84% 0%}
+  25%{background-position:17% 100%}
+  50%{background-position:0% 84%}
+  75%{background-position:100% 35%}
+  100%{background-position:84% 0%}
+}
+
+.soon {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  width: 90vw;
+  height: 300px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo {
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 270px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo {
+    width: 280px;
+  }
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 10.7px;
+  font-weight: 500;
+  letter-spacing: 2.1px;
+}
+
+@media (min-width: 1200px){
+  p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1600px){
+  p {
+    font-size: 12.5px;
+  }
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px){
+  .info {
+    padding: 0 20px 10px;
+  }
+}
+
+.info .tagline {
+  line-height: 16px;
+}
+
+@media (min-width: 1200px){
+  .info .tagline {
+    line-height: 18px;
+  }
+}
+
+.info .tagline .link {
+  color: #B2FC20;
+  text-decoration: none;
+  transition: all ease 0.4s;
+}
+
+.info .tagline .link:hover {
+  /* color: #99E600; */
+}
+
+.info .countdown-container {
+  color: white;
+  text-align: right;
+}
+
+.info .countdown-container .countdown-text {
+  margin-bottom: 3px;
+  /* line-height: 0; */
+}
+
+.info .countdown-container #countdown {
+  margin-top: 0;
+  padding: 0;
+}
